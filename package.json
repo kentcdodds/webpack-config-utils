@@ -17,6 +17,10 @@
     "path-here": "1.1.0",
     "webpack-combine-loaders": "2.0.0"
   },
+  "bundledDependencies": [
+    "path-here",
+    "webpack-combine-loaders"
+  ],
   "devDependencies": {
     "all-contributors-cli": "^3.0.0",
     "ava": "^0.15.2",
