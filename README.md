@@ -4,11 +4,12 @@ Utilities to help your webpack config be easier to read
 
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
+[![Dependencies][dependencyci-badge]][dependencyci]
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][LICENSE]
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs]
 [![Donate][donate-badge]][donate]
 [![Code of Conduct][coc-badge]][coc]
@@ -137,6 +138,8 @@ MIT
 [build]: https://travis-ci.org/kentcdodds/webpack-config-utils
 [coverage-badge]: https://img.shields.io/codecov/c/github/kentcdodds/webpack-config-utils.svg?style=flat-square
 [coverage]: https://codecov.io/github/kentcdodds/webpack-config-utils
+[dependencyci-badge]: https://dependencyci.com/github/kentcdodds/webpack-config-utils/badge?style=flat-square
+[dependencyci]: https://dependencyci.com/github/kentcdodds/webpack-config-utils
 [version-badge]: https://img.shields.io/npm/v/webpack-config-utils.svg?style=flat-square
 [package]: https://www.npmjs.com/package/webpack-config-utils
 [downloads-badge]: https://img.shields.io/npm/dm/webpack-config-utils.svg?style=flat-square
