@@ -3,7 +3,8 @@ export {removeEmpty}
 /**
  * Accepts an array and removes all undefined values (using `filter`)
  *
- * @example <caption>Primary use case is in `plugins` where `undefined` values can cause issues</caption>
+ * @example
+ * // Primary use case is in `plugins` where `undefined` values can cause issues
  * module.exports = {
  *   ... your config
  *   plugins: removeEmpty([

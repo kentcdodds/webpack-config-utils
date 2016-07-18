@@ -5,11 +5,12 @@ export {propIf, propIfNot}
  * (to turn "true" to `true`). And if the result is truthy, then `value` will be returned, otherwise `alternate` will be
  * returned. This powers the (arguably more useful) methods returned from `getIfUtils`.
  * @example
- * // returns 'value'
  * propIf(true, 'value', 'alternate')
- * @example <caption>Is falsy sensitive</caption>
- * // returns 'alternate'
+ * // returns 'value'
+ * @example
+ * // Is falsy sensitive
  * propIf(0, 'value', 'alternate')
+ * // returns 'alternate'
  * @param {*} add The value to evaluate
  * @param {*} value The value to return in a truthy case
  * @param {*} alternate The value to return in a falsy case

@@ -113,50 +113,16 @@ module.exports = env => {
 
 ## API
 
-### `here`
-
-See the package details of [`here`](https://www.npmjs.com/package/here)
-
-### `combineLoaders`
-
-See the package details of [`webpack-combine-loaders`](https://www.npmjs.com/package/webpack-combine-loaders)
-
-### `propIf`
-
-This powers the methods returned from `getIfUtils` and `propIfNot`. It's actually just a simple ternary:
-
-```
-return getValue(add) ? value : alternate
-```
-
-Where `getValue` simply evaluates the given value
-
-### `propIfNot`
-
-
-
-### `removeEmpty`
-
-
-
-### `getIfUtils`
-
-
-
-
-## Inspiration
-
-
-
-## Other Solutions
-
-
+See the API Documentation [here][API Docs]. In addition to custom utilities from this package, it comes bundled with
+a few other helpful utilities: [`path-here`](https://www.npmjs.com/package/path-here) (exposed as `here`) and [`webpack-combine-loaders`](https://www.npmjs.com/package/webpack-combine-loaders) (exposed as `combineLoaders`).
 
 ## Contributors
 
 Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) 💡 🚇 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) |
+| :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification. Contributions of any kind welcome!
@@ -191,3 +157,4 @@ MIT
 [all-contributors]: https://github.com/kentcdodds/all-contributors
 [cross-env]: https://www.npmjs.com/package/cross-env
 [p-s]: https://www.npmjs.com/package/p-s
+[API Docs]: https://doclets.io/kentcdodds/webpack-config-utils/master
