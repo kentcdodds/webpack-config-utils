@@ -1,5 +1,4 @@
 dir: src
-packageJson:
-  - package.json
+packageJson: package.json
 articles:
   - Overview: README.md
