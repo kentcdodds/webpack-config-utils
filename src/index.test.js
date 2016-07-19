@@ -5,7 +5,7 @@ import * as utils from './'
 test('exports all the things we care about', t => {
   const allExports = Object.keys(utils)
   const expectedExports = [
-    'here', 'combineLoaders',
+    'combineLoaders',
     'propIf', 'propIfNot',
     'removeEmpty', 'getIfUtils',
   ]

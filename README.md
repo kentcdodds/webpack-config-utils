@@ -115,7 +115,7 @@ module.exports = env => {
 ## API
 
 See the API Documentation [here][API Docs]. In addition to custom utilities from this package, it comes bundled with
-a few other helpful utilities: [`path-here`](https://www.npmjs.com/package/path-here) (exposed as `here`) and [`webpack-combine-loaders`](https://www.npmjs.com/package/webpack-combine-loaders) (exposed as `combineLoaders`).
+a few another helpful utility: [`webpack-combine-loaders`](https://www.npmjs.com/package/webpack-combine-loaders) (exposed as `combineLoaders`).
 
 ## Contributors
 
