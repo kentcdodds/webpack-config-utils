@@ -97,7 +97,8 @@ argument which you can set on the command line (which means you don't need `cros
 
 ```javascript
 const webpack = require('webpack')
-const {getIfUtils, here} = require('webpack-config-utils')
+const {resolve} = require('path')
+const {getIfUtils} = require('webpack-config-utils')
 
 module.exports = env => {
   const {ifDev} = getIfUtils(env)
@@ -105,7 +106,7 @@ module.exports = env => {
     output: {
       // etc.
       pathinfo: ifDev(),
-      path: here('dist'),
+      path: resolve(__dirname, 'dist'),
     },
     // etc.
   }
