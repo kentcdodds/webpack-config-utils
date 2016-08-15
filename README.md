@@ -9,7 +9,7 @@ Utilities to help your webpack config be easier to read
 [![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][LICENSE]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs]
 [![Donate][donate-badge]][donate]
 [![Code of Conduct][coc-badge]][coc]
@@ -123,8 +123,8 @@ a few another helpful utility: [`webpack-combine-loaders`](https://www.npmjs.com
 Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) 💡 🚇 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) |
-| :---: |
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) 💡 🚇 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) | [<img src="https://avatars.githubusercontent.com/u/284515?v=3" width="100px;"/><br /><sub>Breno Calazans</sub>](https://twitter.com/breno_calazans)<br />💡 |
+| :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification. Contributions of any kind welcome!

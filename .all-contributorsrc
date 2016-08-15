@@ -19,6 +19,15 @@
         "infra",
         "test"
       ]
+    },
+    {
+      "login": "brenoc",
+      "name": "Breno Calazans",
+      "avatar_url": "https://avatars.githubusercontent.com/u/284515?v=3",
+      "profile": "https://twitter.com/breno_calazans",
+      "contributions": [
+        "example"
+      ]
     }
   ]
 }
