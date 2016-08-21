@@ -28,6 +28,15 @@
       "contributions": [
         "example"
       ]
+    },
+    {
+      "login": "tamouse",
+      "name": "Tamara Temple",
+      "avatar_url": "https://avatars.githubusercontent.com/u/363583?v=3",
+      "profile": "http://tamouse.org",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
