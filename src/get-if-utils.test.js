@@ -15,6 +15,16 @@ test('has if and ifNot methods for the expected environment values', t => {
   const diff = difference(methods, expectedMethods)
   t.deepEqual(diff, [])
 })
+test('has ifXXX and ifNotXXX methods for the expected environment values', t => {
+  const expectedMethods = [
+    'ifFoo', 'ifNotFoo',
+    'ifBar', 'ifNotBar',
+  ]
+  const utils = getIfUtils({}, ['foo', 'bar'])
+  const methods = Object.keys(utils)
+  const diff = difference(methods, expectedMethods)
+  t.deepEqual(diff, [])
+})
 
 test('works with string values', t => {
   const {ifProduction} = getIfUtils('production')
@@ -35,4 +45,12 @@ test('returns true/false when given no arguments', t => {
   t.is(ifTest(), true)
   t.is(ifProd(), false)
   t.is(ifNotDev(), true)
+})
+
+test('returns true/false for custom ifXXX when given no arguments', t => {
+  const {ifWatch, ifProd, ifNotDev, ifTest} = getIfUtils('watch', ['prod', 'dev', 'watch'])
+  t.is(ifWatch(), true)
+  t.is(ifProd(), false)
+  t.is(ifNotDev(), true)
+  t.is(ifTest, undefined)
 })

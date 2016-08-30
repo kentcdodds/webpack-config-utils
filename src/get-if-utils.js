@@ -31,16 +31,16 @@ export {getIfUtils}
  * This returns an object with methods to help you conditionally set values to your webpack configuration object.
  * @param  {Object|string} env This would be either the `env` object from webpack (function config API) or the value of
  * `process.env.NODE_ENV`.
+ * @param  {Array} vars A list of valid environments if utils are generated for
  * @return {IfUtils} the IfUtils object for the given environment
  */
-function getIfUtils(env) {
+function getIfUtils(env, vars = ['production', 'prod', 'test', 'development', 'dev']) {
   env = typeof env === 'string' ? {[env]: true} : env
   if (typeof env !== 'object') {
     throw new Error(
       `webpack-config-utils:getIfUtils: env passed should be a string/Object. Was ${JSON.stringify(env)}`
     )
   }
-  const vars = ['production', 'prod', 'test', 'development', 'dev']
   return vars.reduce((utils, variable) => {
     const envValue = !!env[variable]
     const capitalVariable = capitalizeWord(variable)
