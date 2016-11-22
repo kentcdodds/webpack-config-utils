@@ -54,7 +54,7 @@ pre-commit
 
 ## Help needed
 
-Please checkout the [ROADMAP.md][ROADMAP] and raise an issue to discuss
+Please checkout the [ROADMAP.md](https://github.com/kentcdodds/webpack-config-utils/blob/master/other/ROADMAP.md) and raise an issue to discuss
 any of the items in the want to do or might do list.
 
 Also, please watch the repo and respond to questions/bug reports/feature requests! Thanks!
