@@ -1,12 +1,17 @@
 export {removeEmpty}
 
 /**
- * Accepts an array and removes all undefined values (using `filter`)
+ * Accepts an array or an object. In the case of an array, remove all undefined values (using `filter`).
+ * In the case of an object, remove all keys whose values are undefined.
  *
  * @example
- * // Primary use case is in `plugins` where `undefined` values can cause issues
+ * // Primary use case is in `plugins` and `entry` where `undefined` values can cause issues
  * module.exports = {
  *   ... your config
+ *    entry: removeEmptyProperties({
+ *      app: ifProd('./indexWithoutCSS', './indexWithCSS'),
+ *      css: ifNotProd('./style.css')
+ *    }),
  *   plugins: removeEmpty([
  *     ifProduction(new webpack.optimize.DedupePlugin()),
  *     ifProduction(new webpack.LoaderOptionsPlugin({
@@ -32,9 +37,22 @@ export {removeEmpty}
  *   ]),
  * }
  *
- * @param  {Array} array The array to remove undefined values from
- * @return {Array} The resulting array
+ * @param {object | Array} input The object to remove keys from or the array to remove values from
+ * @returns {object | Array} The resulting object or array.
  */
-function removeEmpty(array) {
-  return array.filter(item => typeof item !== 'undefined')
+
+function removeEmpty(input) {
+  let output
+  if (Array.isArray(input)) {
+    output = input.filter(item => typeof item !== 'undefined')
+  } else {
+    output = {}
+    Object.keys(input).forEach(key => {
+      const value = input[key]
+      if (typeof value !== 'undefined') {
+        output[key] = value
+      }
+    })
+  }
+  return output
 }
