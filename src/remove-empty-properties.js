@@ -22,8 +22,8 @@ export {
  *
  * In the case of array input, see the documentation for `removeEmpty`.
  *
- * @param {object | Array} input The object to remove keys from
- * @returns {object} The resulting object
+ * @param {object | Array} input The object to remove keys from or the array to remove values from
+ * @returns {object | Array} The resulting object or array.
  */
 function removeEmptyProperties(input) {
   let output
