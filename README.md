@@ -55,17 +55,17 @@ const {ifProduction} = getIfUtils(process.env.NODE_ENV)
 module.exports = {
   // ... your config
   entry: removeEmpty({
-     app: ifProd('./indexWithoutCSS', './indexWithCSS'),
-     css: ifProd('./style.scss')
+     app: ifProduction('./indexWithoutCSS', './indexWithCSS'),
+     css: ifProduction('./style.scss')
   }),
   module: {
     loaders: [
       removeEmpty({
         test: /\.scss$/,
-        loader: ifProd(ExtractTextPlugin.extract({
+        loader: ifProduction(ExtractTextPlugin.extract({
           loader: ['css-loader', 'sass-loader']
         })),
-        loaders: ifNotProd(['style-loader', 'css-loader', 'sass-loader'])
+        loaders: ifNotProduction(['style-loader', 'css-loader', 'sass-loader'])
       })
     ]
   },
