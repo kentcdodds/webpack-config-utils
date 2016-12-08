@@ -8,6 +8,7 @@ test('exports all the things we care about', t => {
     'combineLoaders',
     'propIf', 'propIfNot',
     'removeEmpty', 'getIfUtils',
+    'removeEmptyProperties',
   ]
   const diff = difference(allExports, expectedExports)
   t.deepEqual(diff, [])
