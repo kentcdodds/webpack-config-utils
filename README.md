@@ -48,19 +48,19 @@ It is expected that you use this in your `webpack.config.js` file.
 
 ```javascript
 const webpack = require('webpack')
-const {getIfUtils, removeEmpty, removeEmptyProperties} = require('webpack-config-utils')
+const {getIfUtils, removeEmpty} = require('webpack-config-utils')
 
 const {ifProduction} = getIfUtils(process.env.NODE_ENV)
 
 module.exports = {
   // ... your config
-  entry: removeEmptyProperties({
+  entry: removeEmpty({
      app: ifProd('./indexWithoutCSS', './indexWithCSS'),
      css: ifProd('./style.scss')
   }),
   module: {
     loaders: [
-      removeEmptyProperties({
+      removeEmpty({
         test: /\.scss$/,
         loader: ifProd(ExtractTextPlugin.extract({
           loader: ['css-loader', 'sass-loader']
