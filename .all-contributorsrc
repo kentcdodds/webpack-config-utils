@@ -46,6 +46,18 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "huy-nguyen",
+      "name": "Huy Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7352279?v=3",
+      "profile": "http://www.huy-nguyen.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "test"
+      ]
     }
   ]
 }
