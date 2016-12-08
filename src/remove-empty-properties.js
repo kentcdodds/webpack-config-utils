@@ -1,5 +1,5 @@
 export {
-  removeEmptyKeys,
+  removeEmptyProperties,
 }
 /**
  * Accepts an object and removes all keys whose values are undefined.
@@ -8,7 +8,7 @@ export {
  * // but not in development:
  * {
  *  // other webpack configs
- *  entry: removeEmptyKeys({
+ *  entry: removeEmptyProperties({
  *    app: ifProd('./indexWithoutCSS', './indexWithCSS'),
  *    css: ifNotProd('./style.css')
  *  })
@@ -16,7 +16,7 @@ export {
  * @param {object} object The object to remove keys from
  * @returns {object} The resulting object
  */
-function removeEmptyKeys(object) {
+function removeEmptyProperties(object) {
   const output = {}
   Object.keys(object).forEach(key => {
     const value = object[key]
