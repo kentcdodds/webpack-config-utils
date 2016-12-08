@@ -7,3 +7,10 @@ test('removeEmptyProperties should remove keys whose values are `undefined` out 
     {a: 1, b: 'b', d: null}
   )
 })
+
+test('removeEmptyProperties should remove `undefined` values from array', t => {
+  t.deepEqual(
+    removeEmptyProperties([1, 'b', undefined, null]),
+    [1, 'b', null]
+  )
+})
