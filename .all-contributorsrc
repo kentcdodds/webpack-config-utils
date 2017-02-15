@@ -58,6 +58,15 @@
         "example",
         "test"
       ]
+    },
+    {
+      "login": "ryandrewjohnson",
+      "name": "Ryan Johnson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3419547?v=3",
+      "profile": "https://github.com/ryandrewjohnson",
+      "contributions": [
+        "blog"
+      ]
     }
   ]
 }
