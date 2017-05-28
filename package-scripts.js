@@ -1,3 +1,7 @@
+const concurrent = require('nps-utils').concurrent
+const rimraf = require('nps-utils').rimraf
+const series = require('nps-utils').series
+
 module.exports = {
   scripts: {
     commit: {
@@ -15,7 +19,7 @@ module.exports = {
     },
     build: {
       description: 'delete the dist directory and run babel to build the files',
-      script: 'rimraf dist && babel --copy-files --out-dir dist --ignore *.test.js src',
+      script: series(rimraf('dist'), 'babel --copy-files --out-dir dist --ignore *.test.js src'),
     },
     lint: {
       description: 'lint the entire project',
@@ -27,11 +31,11 @@ module.exports = {
     },
     release: {
       description: 'We automate releases with semantic-release. This should only be run on travis',
-      script: 'semantic-release pre && npm publish && semantic-release post',
+      script: series('semantic-release pre', 'npm publish', 'semantic-release post'),
     },
     validate: {
       description: 'This runs several scripts to make sure things look good before committing or on clean install',
-      script: 'p-s -p lint,build,test',
+      script: concurrent.nps('lint', 'build', 'test'),
     },
     addContributor: {
       description: 'When new people contribute to the project, run this',

@@ -12,7 +12,7 @@ Thanks for being willing to contribute!
 3. `$ npm start validate` to validate you've got it working
 4. Create a branch for your PR
 
-This project uses [`p-s`][p-s] and you can run `npm start` to see what scripts are available.
+This project uses [`nps`][nps] and you can run `npm start` to see what scripts are available.
 
 ## Add yourself as a contributor
 
@@ -64,4 +64,4 @@ Also, please watch the repo and respond to questions/bug reports/feature request
 [convention]: https://github.com/conventional-changelog/conventional-changelog-angular/blob/ed32559941719a130bb0327f886d6a32a8cbc2ba/convention.md
 [all-contributors]: https://github.com/kentcdodds/all-contributors
 [ROADMAP]: ./ROADMAP.md
-[p-s]: https://npmjs.com/package/p-s
+[nps]: https://npmjs.com/package/nps
