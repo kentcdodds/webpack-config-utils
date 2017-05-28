@@ -96,7 +96,7 @@ module.exports = {
 ```
 
 Then you'd invoke the webpack config with [`cross-env`][cross-env] in your `package.json` scripts (or with
-[`p-s`][p-s]):
+[`nps`][nps]):
 
 ```js
 {
@@ -182,5 +182,5 @@ MIT
 [emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
 [all-contributors]: https://github.com/kentcdodds/all-contributors
 [cross-env]: https://www.npmjs.com/package/cross-env
-[p-s]: https://www.npmjs.com/package/p-s
+[nps]: https://www.npmjs.com/package/nps
 [API Docs]: https://doclets.io/kentcdodds/webpack-config-utils/master
