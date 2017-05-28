@@ -8,10 +8,10 @@ export {removeEmpty}
  * // Primary use case is in `plugins` and `entry` where `undefined` values can cause issues
  * module.exports = {
  *   ... your config
- *    entry: removeEmptyProperties({
- *      app: ifProd('./indexWithoutCSS', './indexWithCSS'),
- *      css: ifNotProd('./style.css')
- *    }),
+ *   entry: removeEmpty({
+ *     app: ifProduction('./indexWithoutCSS', './indexWithCSS'),
+ *     css: ifNotProduction('./style.css')
+ *   }),
  *   plugins: removeEmpty([
  *     ifProduction(new webpack.optimize.DedupePlugin()),
  *     ifProduction(new webpack.LoaderOptionsPlugin({
