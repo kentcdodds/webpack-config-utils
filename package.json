@@ -4,8 +4,8 @@
   "description": "Utilities to help your webpack config be easier to read",
   "main": "dist/index.js",
   "scripts": {
-    "start": "package-scripts",
-    "test": "package-scripts test"
+    "start": "nps",
+    "test": "nps test"
   },
   "files": [
     "dist"
@@ -36,10 +36,10 @@
     "eslint-config-kentcdodds": "^8.1.2",
     "ghooks": "^1.2.1",
     "lodash": "4.13.1",
+    "nps": "^5.3.1",
+    "nps-utils": "^1.2.0",
     "nyc": "^7.0.0",
     "opt-cli": "^1.4.2",
-    "p-s": "^1.0.4",
-    "rimraf": "^2.5.2",
     "semantic-release": "^6.2.1",
     "validate-commit-msg": "^2.6.1"
   },

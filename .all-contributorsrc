@@ -68,6 +68,16 @@
         "blog",
         "doc"
       ]
+    },
+    {
+      "login": "adamdicarlo",
+      "name": "Adam DiCarlo",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/97462?v=3",
+      "profile": "http://adamdicarlo.com",
+      "contributions": [
+        "doc",
+        "tool"
+      ]
     }
   ]
 }
