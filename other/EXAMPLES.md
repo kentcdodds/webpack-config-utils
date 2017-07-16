@@ -42,16 +42,16 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader'],
       exclude: /node_modules/,
       include: __dirname
     }, {
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader'],
       include: path.join(__dirname, '..', '..', 'src')
     }, {
       test: /\.css?$/,
-      loaders: ['style', 'raw'],
+      loaders: ['style-loader', 'raw-loader'],
       include: __dirname
     }]
   }
