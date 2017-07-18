@@ -50,7 +50,7 @@ It is expected that you use this in your `webpack.config.js` file.
 const webpack = require('webpack')
 const {getIfUtils, removeEmpty} = require('webpack-config-utils')
 
-const {ifProduction} = getIfUtils(process.env.NODE_ENV)
+const {ifProduction, ifNotProduction} = getIfUtils(process.env.NODE_ENV)
 
 module.exports = {
   // ... your config
