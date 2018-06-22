@@ -16,8 +16,6 @@ Utilities to help your webpack config be easier to read
 [![Roadmap][roadmap-badge]][roadmap]
 [![Examples][examples-badge]][examples]
 
-<a href="https://app.codesponsor.io/link/PKGFLnhDiFvsUA5P4kAXfiPs/kentcdodds/webpack-config-utils" rel="nofollow"><img src="https://app.codesponsor.io/embed/PKGFLnhDiFvsUA5P4kAXfiPs/kentcdodds/webpack-config-utils.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
-
 ## The problem
 
 Webpack configuration is a JavaScript object which is awesomely declarative. However, often the webpack config file is
