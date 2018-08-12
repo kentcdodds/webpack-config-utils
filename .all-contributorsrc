@@ -78,6 +78,15 @@
         "doc",
         "tool"
       ]
+    },
+    {
+      "login": "jezzay",
+      "name": "Jeremy Y",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5779101?v=4",
+      "profile": "https://github.com/jezzay",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }

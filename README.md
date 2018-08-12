@@ -9,7 +9,7 @@ Utilities to help your webpack config be easier to read
 [![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][LICENSE]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs]
 [![Donate][donate-badge]][donate]
 [![Code of Conduct][coc-badge]][coc]
@@ -54,36 +54,38 @@ const {ifProduction, ifNotProduction} = getIfUtils(process.env.NODE_ENV)
 
 module.exports = {
   // ... your config
+  mode: ifProduction('production', 'development'),
   entry: removeEmpty({
      app: ifProduction('./indexWithoutCSS', './indexWithCSS'),
      css: ifProduction('./style.scss')
   }),
+  output: {
+    chunkFilename: ifProduction('js/[id].[contenthash].js', 'js/[name].js'),
+    filename: ifProduction('js/[id].[contenthash].js', 'js/[name].js'),
+  },
   module: {
-    loaders: [
-      removeEmpty({
-        test: /\.scss$/,
-        loader: ifProduction(ExtractTextPlugin.extract({
-          loader: ['css-loader', 'sass-loader']
-        })),
-        loaders: ifNotProduction(['style-loader', 'css-loader', 'sass-loader'])
-      })
-    ]
+    rules: [
+      {
+        test: /\.(sc|c)ss$/,
+        exclude: /node_modules/,
+        use: removeEmpty([
+          ifProduction(MiniCssExtractPlugin.loader),
+          ifNotProduction({loader: 'style-loader', options: {sourceMap: true}}),
+          {loader: 'css-loader', options: {sourceMap: true}},
+          {loader: 'postcss-loader', options: {sourceMap: true}},
+          {loader: 'sass-loader', options: {sourceMap: true}},
+        ]),
+      },
   },
   plugins: removeEmpty([
-    ifProduction(new webpack.optimize.DedupePlugin()),
-    ifProduction(new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      quiet: true,
-    })),
+    ifProduction(
+      new MiniCssExtractPlugin({
+        filename: 'css/[id].[contenthash].css',
+      })
+    ),
     ifProduction(new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
-      },
-    })),
-    ifProduction(new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        screw_ie8: true,
-        warnings: false,
       },
     })),
     new HtmlWebpackPlugin({
@@ -110,7 +112,7 @@ Then you'd invoke the webpack config with [`cross-env`][cross-env] in your `pack
 
 ---
 
-Things get even better with webpack 2 because you can write your webpack config as a function that accepts an `env`
+Things get even better with webpack 2+ because you can write your webpack config as a function that accepts an `env`
 argument which you can set on the command line (which means you don't need `cross-env` 👍).
 
 ```javascript
@@ -147,6 +149,7 @@ Thanks goes to these people ([emoji key][emojis]):
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 | [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) 💡 🚇 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) | [<img src="https://avatars.githubusercontent.com/u/284515?v=3" width="100px;"/><br /><sub>Breno Calazans</sub>](https://twitter.com/breno_calazans)<br />💡 | [<img src="https://avatars.githubusercontent.com/u/363583?v=3" width="100px;"/><br /><sub>Tamara Temple</sub>](http://tamouse.org)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=tamouse) | [<img src="https://avatars.githubusercontent.com/u/7907232?v=3" width="100px;"/><br /><sub>Ben Halverson</sub>](benhalverson.me)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=benhalverson) | [<img src="https://avatars.githubusercontent.com/u/7352279?v=3" width="100px;"/><br /><sub>Huy Nguyen</sub>](http://www.huy-nguyen.com/)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen) 💡 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen) | [<img src="https://avatars.githubusercontent.com/u/3419547?v=3" width="100px;"/><br /><sub>Ryan Johnson</sub>](https://github.com/ryandrewjohnson)<br />📝 [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=ryandrewjohnson) | [<img src="https://avatars1.githubusercontent.com/u/97462?v=3" width="100px;"/><br /><sub>Adam DiCarlo</sub>](http://adamdicarlo.com)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=adamdicarlo) 🔧 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/5779101?v=4" width="100px;"/><br /><sub>Jeremy Y</sub>](https://github.com/jezzay)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=jezzay) |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification. Contributions of any kind welcome!
