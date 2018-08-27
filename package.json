@@ -14,7 +14,7 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
   "dependencies": {
-    "webpack-combine-loaders": "2.0.0"
+    "webpack-combine-loaders": "2.0.4"
   },
   "bundledDependencies": [
     "webpack-combine-loaders"
