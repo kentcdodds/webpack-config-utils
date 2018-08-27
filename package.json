@@ -40,7 +40,7 @@
     "nps-utils": "^1.2.0",
     "nyc": "^7.0.0",
     "opt-cli": "^1.4.2",
-    "semantic-release": "15.9.10",
+    "semantic-release": "^6.2.1",
     "validate-commit-msg": "^2.6.1"
   },
   "eslintConfig": {
