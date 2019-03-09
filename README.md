@@ -18,7 +18,7 @@ Utilities to help your webpack config be easier to read
 
 ## The problem
 
-Webpack configuration is a JavaScript object which is awesomely declarative. However, often the webpack config file is
+Webpack configuration is a JavaScript object which is awesomely declarative. However, the webpack config file
 can easily turn into an imperative mess in the process of creating the configuration object.
 
 ## This solution
