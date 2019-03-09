@@ -87,6 +87,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "seanyesmunt",
+      "name": "Sean Yesmunt",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16882830?v=4",
+      "profile": "http://seanyesmunt.com",
+      "contributions": [
+        "doc"
+      ]
     }
-  ]
+  ],
+  "contributorsPerLine": 7
 }
