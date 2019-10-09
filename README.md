@@ -1,3 +1,9 @@
+<p align="center">
+<a href="https://codefund.io/properties/502/visit-sponsor">
+<img src="https://codefund.io/properties/502/sponsor" />
+</a>
+</p>
+
 # webpack-config-utils
 
 Utilities to help your webpack config be easier to read
