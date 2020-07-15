@@ -9,7 +9,7 @@ Utilities to help your webpack config be easier to read
 [![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][LICENSE]
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors)
 [![PRs Welcome][prs-badge]][prs]
 [![Donate][donate-badge]][donate]
 [![Code of Conduct][coc-badge]][coc]
@@ -135,8 +135,8 @@ module.exports = env => {
 
 ## API
 
-See the API Documentation [here][API Docs]. In addition to custom utilities from this package, it comes bundled with
-a few another helpful utility: [`webpack-combine-loaders`](https://www.npmjs.com/package/webpack-combine-loaders) (exposed as `combineLoaders`).
+The API Documentation is still to come. In addition to custom utilities from this package, it comes bundled with
+another helpful utility: [`webpack-combine-loaders`](https://www.npmjs.com/package/webpack-combine-loaders) (exposed as `combineLoaders`).
 
 ## Articles
 
@@ -147,28 +147,9 @@ a few another helpful utility: [`webpack-combine-loaders`](https://www.npmjs.com
 Thanks goes to these people ([emoji key][emojis]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;" alt=""/><br /><sub><b>Kent C. Dodds</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds" title="Code">💻</a> <a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds" title="Documentation">📖</a> <a href="#example-kentcdodds" title="Examples">💡</a> <a href="#infra-kentcdodds" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds" title="Tests">⚠️</a></td>
-    <td align="center"><a href="https://twitter.com/breno_calazans"><img src="https://avatars.githubusercontent.com/u/284515?v=3" width="100px;" alt=""/><br /><sub><b>Breno Calazans</b></sub></a><br /><a href="#example-brenoc" title="Examples">💡</a></td>
-    <td align="center"><a href="http://tamouse.org"><img src="https://avatars.githubusercontent.com/u/363583?v=3" width="100px;" alt=""/><br /><sub><b>Tamara Temple</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=tamouse" title="Documentation">📖</a></td>
-    <td align="center"><a href="benhalverson.me"><img src="https://avatars.githubusercontent.com/u/7907232?v=3" width="100px;" alt=""/><br /><sub><b>Ben Halverson</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=benhalverson" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://www.huy-nguyen.com/"><img src="https://avatars.githubusercontent.com/u/7352279?v=3" width="100px;" alt=""/><br /><sub><b>Huy Nguyen</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen" title="Code">💻</a> <a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen" title="Documentation">📖</a> <a href="#example-huy-nguyen" title="Examples">💡</a> <a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen" title="Tests">⚠️</a></td>
-    <td align="center"><a href="https://github.com/ryandrewjohnson"><img src="https://avatars.githubusercontent.com/u/3419547?v=3" width="100px;" alt=""/><br /><sub><b>Ryan Johnson</b></sub></a><br /><a href="#blog-ryandrewjohnson" title="Blogposts">📝</a> <a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=ryandrewjohnson" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://adamdicarlo.com"><img src="https://avatars1.githubusercontent.com/u/97462?v=3" width="100px;" alt=""/><br /><sub><b>Adam DiCarlo</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=adamdicarlo" title="Documentation">📖</a> <a href="#tool-adamdicarlo" title="Tools">🔧</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/jezzay"><img src="https://avatars2.githubusercontent.com/u/5779101?v=4" width="100px;" alt=""/><br /><sub><b>Jeremy Y</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=jezzay" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://seanyesmunt.com"><img src="https://avatars0.githubusercontent.com/u/16882830?v=4" width="100px;" alt=""/><br /><sub><b>Sean Yesmunt</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=seanyesmunt" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://stackshare.io/jdorfman/decisions"><img src="https://avatars1.githubusercontent.com/u/398230?v=4" width="100px;" alt=""/><br /><sub><b>Justin Dorfman</b></sub></a><br /><a href="#fundingFinding-jdorfman" title="Funding Finding">🔍</a></td>
-    <td align="center"><a href="https://www.andrewm.codes"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/kentcdodds/webpack-config-utils/commits?author=andrewmcodes" title="Documentation">📖</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) 💡 🚇 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=kentcdodds) | [<img src="https://avatars.githubusercontent.com/u/284515?v=3" width="100px;"/><br /><sub>Breno Calazans</sub>](https://twitter.com/breno_calazans)<br />💡 | [<img src="https://avatars.githubusercontent.com/u/363583?v=3" width="100px;"/><br /><sub>Tamara Temple</sub>](http://tamouse.org)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=tamouse) | [<img src="https://avatars.githubusercontent.com/u/7907232?v=3" width="100px;"/><br /><sub>Ben Halverson</sub>](benhalverson.me)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=benhalverson) | [<img src="https://avatars.githubusercontent.com/u/7352279?v=3" width="100px;"/><br /><sub>Huy Nguyen</sub>](http://www.huy-nguyen.com/)<br />[💻](https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen) [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen) 💡 [⚠️](https://github.com/kentcdodds/webpack-config-utils/commits?author=huy-nguyen) | [<img src="https://avatars.githubusercontent.com/u/3419547?v=3" width="100px;"/><br /><sub>Ryan Johnson</sub>](https://github.com/ryandrewjohnson)<br />📝 [📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=ryandrewjohnson) | [<img src="https://avatars1.githubusercontent.com/u/97462?v=3" width="100px;"/><br /><sub>Adam DiCarlo</sub>](http://adamdicarlo.com)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=adamdicarlo) 🔧 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/5779101?v=4" width="100px;"/><br /><sub>Jeremy Y</sub>](https://github.com/jezzay)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=jezzay) | [<img src="https://avatars0.githubusercontent.com/u/16882830?v=4" width="100px;"/><br /><sub>Sean Yesmunt</sub>](http://seanyesmunt.com)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=seanyesmunt) | [<img src="https://avatars1.githubusercontent.com/u/398230?v=4" width="100px;"/><br /><sub>Justin Dorfman</sub>](https://stackshare.io/jdorfman/decisions)<br />🔍 | [<img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;"/><br /><sub>Andrew Mason</sub>](https://www.andrewm.codes)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=andrewmcodes) | [<img src="https://avatars1.githubusercontent.com/u/29556502?v=4" width="100px;"/><br /><sub>Kendra Zolner</sub>](https://github.com/gitKendra)<br />[📖](https://github.com/kentcdodds/webpack-config-utils/commits?author=gitKendra) |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification. Contributions of any kind welcome!
@@ -205,4 +186,3 @@ MIT
 [all-contributors]: https://github.com/kentcdodds/all-contributors
 [cross-env]: https://www.npmjs.com/package/cross-env
 [nps]: https://www.npmjs.com/package/nps
-[API Docs]: https://doclets.io/kentcdodds/webpack-config-utils/master
